@@ -11,6 +11,7 @@ const controllerNumbers = require('../controllers/controllerNumbers');
 router.post('/teacher/',teacherController.postTeacher);
 router.get('/teacher/',teacherController.getTeacher);
 
-router.post('/number/', controllerNumbers.postNumbers);
+router.post('/par/', controllerNumbers.postPar);
+router.post('/primo/',controllerNumbers.postPrimo); 
 
 module.exports = router

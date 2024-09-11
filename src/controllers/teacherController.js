@@ -1,5 +1,5 @@
 module.exports = class teacherController {
-//cadastro do professor 
+  //cadastro do professor
   static async postTeacher(req, res) {
     const { nome, cargaHoraria } = req.body;
     if (!nome || !cargaHoraria) {
@@ -17,5 +17,4 @@ module.exports = class teacherController {
   static async getTeacher(req, res) {
     res.status(200).json({ nome: "Maria Fernanda" });
   }
-  
 };
